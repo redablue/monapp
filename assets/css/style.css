@@ -1,0 +1,63 @@
+/* assets/css/style.css */
+
+/* Animation Keyframes */
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Quelques styles généraux pour améliorer l'apparence */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Animated Background */
+    background: linear-gradient(-45deg, #0876c3, #005691, #0876c3, #005691); /* Utilisation de deux nuances pour un dégradé plus dynamique */
+    background-size: 400% 400%; /* Rend le dégradé plus grand que la fenêtre */
+    animation: backgroundAnimation 15s ease infinite; /* Applique l'animation */
+    color: #333; /* Assure que le texte est lisible sur le nouvel arrière-plan */
+    font-family: 'Inter', sans-serif; /* Utilisation de la police Inter pour une cohérence et un look moderne */
+}
+
+main {
+    flex: 1; /* Permet au contenu principal de prendre l'espace disponible */
+}
+
+.footer {
+    border-top: 1px solid #e7e7e7;
+}
+
+/* Styles pour les formulaires (ex: ajouter un peu d'espace) */
+.form-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Styles pour les alertes visuelles de retard */
+.table-responsive .table .table-danger {
+    background-color: #f8d7da !important;
+    color: #721c24;
+}
+.table-responsive .table .table-warning {
+    background-color: #fff3cd !important;
+    color: #664d03;
+}
+/* Styles pour 'Fidaous Pro' */
+.fidaous-pro {
+    font-family: 'Inter', sans-serif; /* Utilise la même police Inter */
+    font-size: 2.5rem; /* Taille de police plus grande pour un titre */
+    font-weight: 700; /* Gras pour l'emphase */
+    color: #fff; /* Couleur blanche pour contraster avec le fond bleu */
+    text-align: center; /* Centrage du texte */
+    padding: 20px 0; /* Espacement vertical */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ombre portée pour un effet de profondeur */
+    letter-spacing: 0.05em; /* Léger espacement entre les lettres */
+    /* Vous pouvez ajouter d'autres styles ici si nécessaire, par exemple: */
+    /* margin-top: 30px; */
+    /* border-bottom: 2px solid rgba(255, 255, 255, 0.5); */
+}
+/* Tu peux ajouter plus de styles ici au fur et à mesure */
